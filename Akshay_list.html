@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Data Structure in Python</title>
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body><h2 id="data-structures">Data Structures</h2>
+<h3 id="data-structure-is-a-core-concept-of-computer-science-by-which-we-can-do-programming-in-any-other-progrmming-languages-data-structure-are-used-to-store-the-data-elements-in-a-sequential-manner-">Data Structure is a core concept of computer science by which we can do programming in any other progrmming languages. Data structure are used to store the data elements in a sequential manner.</h3>
+<h4 id="in-python-we-can-call-data-structure-as-collections-collections-are-containers-that-are-used-to-store-collections-of-data-">In Python we can call Data Structure as Collections. Collections are containers that are used to store collections of data.</h4>
+<h4 id="there-are-4-built-in-collections-or-data-structure-namely-">There are 4 Built-in collections or data structure namely:-</h4>
+<ul>
+<li>List</li>
+<li>Dictionary</li>
+<li>Tuple</li>
+<li>Set</li>
+</ul>
+<h2 id="what-is-a-list-">What is a List?</h2>
+<p>A List is used to store the sequence of various types of data. Data are inclosed inside [ ] brackets seprated by commas(,). Lists are mutable in nature it means data which can be changed when required. Duplicate entries are allowed in list.  A list can also have another list as an item. This is called a nested list.</p>
+<h6 id="syntax-">Syntax:-</h6>
+<pre><code><span class="hljs-attr">list1</span> = [ ] #Empty List
+<span class="hljs-attr">list2</span> = [ sequence1 ]
+<span class="hljs-attr">list3</span> = [ sequence1, sequence2, sequence3 ]
+</code></pre><h6 id="example-">Example:-</h6>
+<pre><code><span class="hljs-attr">language</span> = [<span class="hljs-string">'C'</span>,<span class="hljs-string">'C++'</span>,<span class="hljs-string">'Java'</span>,<span class="hljs-string">'Python'</span>]       //List of Strings
+<span class="hljs-attr">number</span> = [<span class="hljs-number">3</span>,<span class="hljs-number">5</span>,<span class="hljs-number">4</span>,<span class="hljs-number">9</span>]                           //List of Numbers
+<span class="hljs-attr">mixed</span> = [<span class="hljs-string">'Mango'</span>,<span class="hljs-string">'Apple'</span>,<span class="hljs-number">1</span>,<span class="hljs-string">'Banana'</span>,<span class="hljs-number">8</span>]       //List of Mixed Data Type 
+<span class="hljs-attr">nested</span> = [[<span class="hljs-string">'Raman'</span>, <span class="hljs-string">'Nikhil'</span>],[<span class="hljs-number">2</span>,<span class="hljs-number">5</span>,<span class="hljs-number">7</span>]]       //List of Nested List
+<span class="hljs-attr">deep_nested</span> = [<span class="hljs-string">'Honey'</span>,<span class="hljs-string">'Deepak'</span>,[<span class="hljs-number">1</span>,<span class="hljs-number">5</span>,<span class="hljs-number">8</span>,[<span class="hljs-string">'Akshay'</span>,<span class="hljs-string">'Shubham'</span>,[<span class="hljs-string">'India'</span>,<span class="hljs-string">'Australia]]]]              //Deeply Nested</span>
+</code></pre><ul>
+<li>Each element in the list has a position in the list known as an index. The list index starts from zero.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>23461</td>
+<td>0</td>
+</tr>
+<tr>
+<td>77194</td>
+<td>1</td>
+</tr>
+<tr>
+<td>10295</td>
+<td>2</td>
+</tr>
+<tr>
+<td>14920</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Index positions actually help us to directly access a value from the list. list_name[index] can be used to directly access the list element at the mentioned index position.</li>
+<li>If we want to access an element directly, we can also use it to directly modify an element in the list.  element[1] = 23413</li>
+</ul>
+<h2 id="basic-operations-of-list">Basic Operations of List</h2>
+<table>
+<thead>
+<tr>
+<th>Python Expression</th>
+<th>Result</th>
+<th>Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>[1,2,3]+[8,9,9]</td>
+<td>[1,2,3,8,9,9]</td>
+<td>Concatination</td>
+</tr>
+<tr>
+<td>len([4,5,6])</td>
+<td>3</td>
+<td>Length</td>
+</tr>
+<tr>
+<td>7 in [1,4,7]</td>
+<td>True</td>
+<td>Membership</td>
+</tr>
+<tr>
+<td>for n in [1,3,5]: print (n)</td>
+<td>1 3 5</td>
+<td>Iteration</td>
+</tr>
+<tr>
+<td>n=[1,3,7] print(n[2])</td>
+<td>7</td>
+<td>Indexing: Offset Starts at 0</td>
+</tr>
+<tr>
+<td>n=[1,3,7] print(n[-2])</td>
+<td>3</td>
+<td>Negative Slicing: Count from right</td>
+</tr>
+<tr>
+<td>n=[1,3,7] print(n[1:])</td>
+<td>[3,7]</td>
+<td>Slicing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="built-in-methods-and-functions-in-lists">Built-in methods and functions in lists</h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cmp(list1,list2)</td>
+<td>Compare elements of both list</td>
+</tr>
+<tr>
+<td>len(list)</td>
+<td>Give total Length of list</td>
+</tr>
+<tr>
+<td>max(list)</td>
+<td>Return item from list with maximum value</td>
+</tr>
+<tr>
+<td>min(list)</td>
+<td>Return item form list with minimum value</td>
+</tr>
+<tr>
+<td>list(seq)</td>
+<td>converts a tuple to list</td>
+</tr>
+<tr>
+<td>list.append(obj)</td>
+<td>Append object obj to list</td>
+</tr>
+<tr>
+<td>list.count(obj)</td>
+<td>Return count of how many times obj occurs in list</td>
+</tr>
+<tr>
+<td>list.insert(index,obj)</td>
+<td>Insert object obj to list at offset index</td>
+</tr>
+<tr>
+<td>obj=list.pop()</td>
+<td>Remove the item at position -1 from list  and assigns it to obj</td>
+</tr>
+<tr>
+<td>list.remove(obj)</td>
+<td>Removes object obj from list</td>
+</tr>
+<tr>
+<td>list.reverse()</td>
+<td>Reverses  the order of items in list</td>
+</tr>
+<tr>
+<td>sorted(list)</td>
+<td>Sorts item in list</td>
+</tr>
+</tbody>
+</table>
+<h2 id="now-you-have-learnt-about-collection-list-">Now You have learnt about Collection List.</h2>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>

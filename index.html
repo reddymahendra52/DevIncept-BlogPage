@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Data Structure in Python</title>
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/android-chrome-512x512.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        [style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}
+    </style>
+</head>
+
+<body style="font-family: Buenard, serif;">
+    <nav class="navbar navbar-light navbar-expand-md sticky-top" data-aos="slide-down" data-aos-once="true" id="navigation" style="padding: 19.2px 16px;background-color: #fff;">
+        <div class="container-fluid container"><a class="navbar-brand" href="#" style="font-size: 30px;font-family: Amita, cursive;font-weight: 600;font-style: normal;color: rgba(255,255,255,0.9);"><img class="img-fluid" src="assets/img/Devincept.gif" style="width: 130px;height: 65px;"></a>
+            <button
+                data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="font-family: Roboto, sans-serif;">
+                    <ul class="nav navbar-nav text-uppercase ml-auto" style="font-size: 13px;font-weight: 600;">
+                        <li class="nav-item" role="presentation" style="padding-right: 32px;"><a class="nav-link active" href="#">Why Us?</a></li>
+                        <li class="nav-item" role="presentation" style="padding-right: 32px;"><a class="nav-link active" href="#">timeline</a></li>
+                        <li class="nav-item" role="presentation" style="padding-right: 32px;"><a class="nav-link" href="#">Free Courses</a></li>
+                        <li class="nav-item" role="presentation" style="padding-right: 32px;"><a class="nav-link" href="#">Join us</a></li>
+                        <li class="nav-item" role="presentation" style="padding-right: 32px;"><a class="nav-link" href="#">faq</a></li>
+                    </ul>
+                </div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div style="padding: 30px;">
+            <p class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #142788;">Learning to Python</p>
+            <h1 class="d-flex justify-content-center" data-aos="fade-up" style="font-family: Roboto, sans-serif;color: #142788;">Data Structure in Python</h1>
+        </div>
+        <div id="base" class="text-center" style="background-color: rgba(0,0,0,0.1);padding: 10px 0;font-family: Roboto, sans-serif;color: #142788;">
+            <p class="justify-content-center"><i class="fa fa-align-center"></i>&nbsp; Reads 2513</p>
+            <p><i class="fa fa-comment-o"></i>&nbsp; Comments 153</p>
+            <p><i class="fa fa-share-alt"></i>&nbsp; Share 795</p>
+        </div>
+    </section>
+    <section id="sidetab" style="margin: 30px;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3" data-aos="fade-right" style="margin-bottom: 20px;">
+                    <div class="table-responsive text-left">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="font-family: Roboto, sans-serif;"><i class="fa fa-edit"></i>&nbsp;Getting Started</th>
+                                </tr>
+                            </thead>
+                            <tbody style="font-family: Roboto, sans-serif;">
+                                <tr>
+                                    <td>What is list?</td>
+                                </tr>
+                                <tr>
+                                    <td>Creating a List</td>
+                                </tr>
+                                <tr>
+                                    <td>Accessing a List</td>
+                                </tr>
+                                <tr>
+                                    <td>Changing &amp; Adding item in List</td>
+                                </tr>
+                                <tr>
+                                    <td>Deleting &amp; Removing List</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-down" id="main">
+                    <div style="--aspect-ratio: 1.7/9;">
+                        <iframe src="people.html" width="1600" height="900" frameborder="0"> </iframe>
+                    </div>
+                </div>
+                <div class="col"></div>
+                <div class="col-md-6 offset-3"><a class="d-flex justify-content-end align-items-center" href="#" style="padding: 20px;font-weight: 600;font-family: Roboto, sans-serif;color: #000;">Next Page&nbsp;&nbsp;<i class="fa fa-arrow-circle-right"></i></a></div>
+            </div>
+        </div>
+    </section>
+    <section id="sponsor" class="mx-auto">
+        <h1 class="d-flex justify-content-center" style="font-family: Roboto, sans-serif;">Our Sponsors</h1><a class="d-flex justify-content-center" href="#"><img class="img-fluid" src="assets/img/GMC_logo.png" width="300px" style="padding-top: 40px;padding-bottom: 70px;"></a></section>
+    <footer class="d-flex flex-column justify-content-center align-items-center"
+        style="margin-bottom: 100px;">
+        <h1 style="font-family: Roboto, sans-serif;">DevIncept</h1>
+        <h5 style="font-family: Roboto, sans-serif;">Contact Us:</h5>
+        <p style="font-family: Roboto, sans-serif;">Email:&nbsp;<a href="#">support@devincept.tech</a></p>
+        <div class="d-flex"><button class="btn btn-primary" type="button"><i class="fa fa-linkedin-square"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-facebook"></i></button><button class="btn btn-primary" type="button"><i class="fa fa-instagram"></i></button>
+            <button
+                class="btn btn-primary" type="button"><i class="fa fa-github"></i></button>
+        </div>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
